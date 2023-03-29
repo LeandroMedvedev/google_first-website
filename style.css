@@ -1,0 +1,167 @@
+/* -------------------- */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------- */
+/* COLORS */
+:root {
+  --whisper: #eee;
+  --black: #000;
+}
+
+/* -------------------- */
+/* GENERAL */
+body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------- */
+/* HEADER */
+header {
+  display: inherit;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------- */
+/* SECTION */
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-lightgrey {
+  width: 550px;
+  display: inherit;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--whisper);
+  padding: 6px;
+}
+
+.container-lightgrey:first-child,
+.container-lightgrey:last-child p {
+  margin-bottom: 10px;
+}
+
+input {
+  height: 23px;
+  margin-bottom: 3px;
+  padding-left: 6px;
+}
+
+input::placeholder {
+  color: var(--black);
+}
+
+#main-input {
+  width: 320px;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+button {
+  padding: 2px 5px;
+}
+
+p {
+  text-align: center;
+}
+
+#hidden-break {
+  display: none;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#double-link {
+  margin-bottom: 3px;
+}
+
+/* -------------------- */
+/* FOOTER */
+footer {
+  padding-top: 2px;
+}
+
+/* -------------------- */
+/* MEDIA QUERIES */
+
+/* ------------------------------------- */
+/* 580PX */
+@media only screen and (max-width: 580px) {
+  header img {
+    width: 300px;
+  }
+
+  .container-lightgrey {
+    width: 500px;
+  }
+
+  #main-input {
+    width: 250px;
+  }
+}
+
+/* ------------------------------------- */
+/* 510PX */
+@media only screen and (max-width: 510px) {
+  header img {
+    width: 265px;
+  }
+
+  .container-lightgrey {
+    width: 400px;
+  }
+
+  #main-input {
+    width: 230px;
+  }
+}
+
+/* ------------------------------------- */
+/* 420PX */
+@media only screen and (max-width: 420px) {
+  .container-lightgrey {
+    width: 308px;
+  }
+
+  .container-lightgrey:first-child div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-lightgrey:last-child div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    margin: 3px;
+  }
+
+  #hidden-break {
+    display: flex;
+  }
+}
